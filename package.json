@@ -1,0 +1,19 @@
+{
+  "name": "DotNetExceptionMessageFormatter",
+  "version": "0.0.1",
+  "description": "A single page site that you can paste your .net exceptions in and automatically format the exception string.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    ".net",
+    "exception",
+    "formatter"
+  ],
+  "author": "Jason Jarrett",
+  "license": "MIT"
+}
