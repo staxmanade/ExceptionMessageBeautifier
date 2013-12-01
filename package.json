@@ -15,5 +15,10 @@
     "formatter"
   ],
   "author": "Jason Jarrett",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "edge": "~0.7.13"
+  }
 }
