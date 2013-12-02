@@ -16,9 +16,10 @@
   ],
   "author": "Jason Jarrett",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "edge": "~0.7.13"
+    "edge": "~0.7.13",
+    "approvals": "0.0.4",
+    "edge-ps": "0.1.0-pre"
   }
 }

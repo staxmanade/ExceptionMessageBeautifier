@@ -1,0 +1,4 @@
+System.Exception: Hello Exception!
+   at TestExceptionGenerator.Spike.GetException() in c:CodepersonalDotNetExceptionMessageFormatterTestExceptionGeneratorSpike.cs:line 22
+   at TestExceptionGenerator.Spike.<GenericException>b__0() in c:CodepersonalDotNetExceptionMessageFormatterTestExceptionGeneratorSpike.cs:line 13
+   at TestExceptionGenerator.Extensions.GetExceptionString(Action action) in c:CodepersonalDotNetExceptionMessageFormatterTestExceptionGeneratorSpike.cs:line 34

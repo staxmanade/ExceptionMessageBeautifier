@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "DotNetExceptionMessageFormatter", "DotNetExceptionMessageFormatter\DotNetExceptionMessageFormatter.njsproj", "{8630236C-023B-49B4-A492-DB12E72C6826}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExceptionGenerator", "TestExceptionGenerator\TestExceptionGenerator.csproj", "{AB652A78-783E-48F5-A876-E9740D01D3F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8630236C-023B-49B4-A492-DB12E72C6826}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8630236C-023B-49B4-A492-DB12E72C6826}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8630236C-023B-49B4-A492-DB12E72C6826}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8630236C-023B-49B4-A492-DB12E72C6826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB652A78-783E-48F5-A876-E9740D01D3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB652A78-783E-48F5-A876-E9740D01D3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB652A78-783E-48F5-A876-E9740D01D3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB652A78-783E-48F5-A876-E9740D01D3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
