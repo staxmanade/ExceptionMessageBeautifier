@@ -1,5 +1,5 @@
 {
-  "name": "ExceptionMessageBeautifier",
+  "name": "exceptionmessagebeautifier",
   "version": "0.0.1",
   "description": "Contains a helper that can be used to format exception messages.",
   "main": "index.js",
