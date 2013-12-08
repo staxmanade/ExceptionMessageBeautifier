@@ -2,11 +2,7 @@
         reporters:  ["visualstudio"]
     }).mocha(__dirname);
 
-
-var formatException = function(exceptionMessage){
-    exceptionMessage = exceptionMessage || '';
-    return exceptionMessage.replace(/   at/g, '\r\n   at');
-};
+var formatException = require("../src/DotNetExceptionMessageFormatter.js").format;
 
 describe('When prettyifying DotNet Exception Messages', function () {
 
