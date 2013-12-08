@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ExceptionMessageBeautifier", "ExceptionMessageBeautifier\ExceptionMessageBeautifier.njsproj", "{8630236C-023B-49B4-A492-DB12E72C6826}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ExceptionMessageBeautifier", "ExceptionMessageBeautifier.njsproj", "{8630236C-023B-49B4-A492-DB12E72C6826}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExceptionGenerator", "TestExceptionGenerator\TestExceptionGenerator.csproj", "{AB652A78-783E-48F5-A876-E9740D01D3F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestExceptionGenerator", "SampleExceptions\TestExceptionGenerator\TestExceptionGenerator.csproj", "{AB652A78-783E-48F5-A876-E9740D01D3F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
