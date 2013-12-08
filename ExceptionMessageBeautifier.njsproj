@@ -19,6 +19,7 @@
     <NodejsPort />
     <StartWebBrowser>False</StartWebBrowser>
     <LaunchUrl />
+    <Name>ExceptionMessageBeautifier</Name>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -30,7 +31,7 @@
     <Folder Include="tests\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\DotNetExceptionMessageFormatter.js" />
+    <Compile Include="src\ExceptionMessageBeautifier.js" />
     <Compile Include="tests\edgeSpikes.js" />
     <Compile Include="tests\formatSpec.js" />
   </ItemGroup>

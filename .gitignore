@@ -3,4 +3,4 @@ node_modules
 *.suo
 *.received.txt
 
-DotNetExceptionMessageFormatter/tests/edgeSpikes.js
+tests/edgeSpikes.js
