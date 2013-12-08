@@ -1,7 +1,7 @@
 {
-  "name": "DotNetExceptionMessageFormatter",
+  "name": "ExceptionMessageBeautifier",
   "version": "0.0.1",
-  "description": "A single page site that you can paste your .net exceptions in and automatically format the exception string.",
+  "description": "Contains a helper that can be used to format exception messages.",
   "main": "index.js",
   "directories": {
     "test": "tests"
@@ -11,6 +11,7 @@
   },
   "keywords": [
     ".net",
+    "DotNet",
     "exception",
     "formatter"
   ],
@@ -19,7 +20,6 @@
   "dependencies": {},
   "devDependencies": {
     "edge": "~0.7.13",
-    "approvals": "0.0.4",
-    "edge-ps": "0.1.0-pre"
+    "approvals": "0.0.4"
   }
 }
