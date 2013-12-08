@@ -1,8 +1,22 @@
 ﻿
 
 var formatException = function(exceptionMessage){
-    exceptionMessage = exceptionMessage || '';
-    return exceptionMessage.replace(/   at/g, '\r\n   at');
+    result = exceptionMessage || '';
+
+    var searchReplaces = [
+        {
+            find:/   at/g,
+            repl: '\r\n   at'},
+        {
+            find:/   --- End of inner exception stack trace ---/g, 
+            repl: '\r\n   --- End of inner exception stack trace ---'}
+    ]
+
+    searchReplaces.forEach(function(item){
+        result = result.replace(item.find, item.repl);
+    });
+
+    return result;
 };
 
 

@@ -30,6 +30,7 @@
     <Folder Include="tests\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\DotNetExceptionMessageFormatter.js" />
     <Compile Include="tests\edgeSpikes.js" />
     <Compile Include="tests\formatSpec.js" />
   </ItemGroup>
