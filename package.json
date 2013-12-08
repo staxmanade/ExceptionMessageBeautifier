@@ -20,6 +20,6 @@
   "dependencies": {},
   "devDependencies": {
     "edge": "~0.7.13",
-    "approvals": "0.0.4"
+    "approvals": "0.0.x"
   }
 }
