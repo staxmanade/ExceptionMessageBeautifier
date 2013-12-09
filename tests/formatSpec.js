@@ -4,22 +4,19 @@
 
 var formatException = require("../src/ExceptionMessageBeautifier.js").format;
 
+
 describe('When prettyifying DotNet Exception Messages', function () {
 
     it('formats a basic exception', function () {
         var data = "System.Exception: Hello Exception!   at TestExceptionGenerator.Spike.GetException() in c:\\Code\\personal\\DotNetExceptionMessageFormatter\\TestExceptionGenerator\\Spike.cs:line 22   at TestExceptionGenerator.Spike.<GenericException>b__0() in c:\\Code\\personal\\DotNetExceptionMessageFormatter\\TestExceptionGenerator\\Spike.cs:line 13   at TestExceptionGenerator.Extensions.GetExceptionString(Action action) in c:\\Code\\personal\\DotNetExceptionMessageFormatter\\TestExceptionGenerator\\Spike.cs:line 34";
-
         var result = formatException(data);
-
         this.verify(result);
     });
 
 
     it('formats an exception with an inner exception', function(){
         var data = 'System.Exception: Test outer exception ---> System.Exception: Hello Exception!   at TestExceptionGenerator.Spike.GetException() in c:\\Code\\personal\\DotNetExceptionMessageFormatter\\TestExceptionGenerator\\Spike.cs:line 29   at TestExceptionGenerator.Spike.GetInnerException() in c:\\Code\\personal\\DotNetExceptionMessageFormatter\\TestExceptionGenerator\\Spike.cs:line 36   --- End of inner exception stack trace ---   at TestExceptionGenerator.Spike.GetInnerException() in c:\\Code\\personal\\DotNetExceptionMessageFormatter\\TestExceptionGenerator\\Spike.cs:line 41   at TestExceptionGenerator.Spike.<GenericExceptionWithInnerException>b__1() in c:\\Code\\personal\\DotNetExceptionMessageFormatter\\TestExceptionGenerator\\Spike.cs:line 21   at TestExceptionGenerator.Extensions.GetExceptionString(Action action) in c:\\Code\\personal\\DotNetExceptionMessageFormatter\\TestExceptionGenerator\\Spike.cs:line 56'
-
         var result = formatException(data);
-
         this.verify(result);
     });
 
@@ -29,3 +26,10 @@ describe('When prettyifying DotNet Exception Messages', function () {
         this.verify(result);
     });
 });
+
+//describe("When beautifying WinJS exception messages", function(){
+//    it("should format", function(){
+//        var data = '{"type":"error","detail":{"description":"Object doesn\'t support this action","number":-2146827843,"stack":"TypeError: Object doesn\'t support this action\n   at foo3 (ms-appx://3fe70ce3-a49b-4236-bb4f-00a8b8a64290/js/default.js:18:9)\n   at foo2 (ms-appx://3fe70ce3-a49b-4236-bb4f-00a8b8a64290/js/default.js:15:9)\n   at foo1 (ms-appx://3fe70ce3-a49b-4236-bb4f-00a8b8a64290/js/default.js:12:9)\n   at onactivated (ms-appx://3fe70ce3-a49b-4236-bb4f-00a8b8a64290/js/default.js:22:9)\n   at wrapper (ms-appx://microsoft.winjs.1.0/js/base.js:549:61)\n   at dispatchOne (ms-appx://microsoft.winjs.1.0/js/base.js:6987:25)\n   at dispatchEvent (ms-appx://microsoft.winjs.1.0/js/base.js:6986:21)\n   at drainQueue (ms-appx://microsoft.winjs.1.0/js/base.js:7038:9)\n   at queueEvent (ms-appx://microsoft.winjs.1.0/js/base.js:7057:13)\n   at Anonymous function (ms-appx://microsoft.winjs.1.0/js/base.js:7110:13)"}}';
+//        verifyHelper.call(this, [data]);
+//    });
+//})
