@@ -8,8 +8,14 @@ var formatException = function(exceptionMessage){
             find:/   at/g,
             repl: '\r\n   at'},
         {
-            find:/   --- End of inner exception stack trace ---/g, 
-            repl: '\r\n   --- End of inner exception stack trace ---'}
+            find:/ ---> /g,
+            repl: '\r\n ---> '},
+        {
+            find:/\) at /g,
+            repl: '\r\n at '},
+        {
+            find:/ --- End of inner exception stack trace ---/g, 
+            repl: '\r\n   --- End of inner exception stack trace ---'}            
     ]
 
     searchReplaces.forEach(function(item){
