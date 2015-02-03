@@ -1,6 +1,8 @@
 ExceptionMessageBeautifier
 ==========================
 
+> By: [@staxmanade](http://staxmanade.com)
+
 Contains a helper that can be used to format exception messages.
 
 
