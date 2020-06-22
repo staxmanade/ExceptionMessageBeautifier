@@ -12,7 +12,7 @@ var formatException = function(exceptionMessage){
             repl: '\r\n ---> '},
         {
             find:/\) at /g,
-            repl: '\r\n at '},
+            repl: '\r\n\) at '},
         {
             find:/ --- End of inner exception stack trace ---/g, 
             repl: '\r\n   --- End of inner exception stack trace ---'}            
